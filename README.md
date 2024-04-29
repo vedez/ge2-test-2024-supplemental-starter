@@ -2,7 +2,8 @@
 
 Click for a video of the octopus creation system you will create today:
 
-[![YouTube](https://www.youtube.com/watch?v=7azTqY8ADmo)
+[![YouTube](http://img.youtube.com/vi/7azTqY8ADmo/0.jpg)](https://www.youtube.com/watch?v=7azTqY8ADmo)
+
 
 - Fork this repo
 - Clone your fork
