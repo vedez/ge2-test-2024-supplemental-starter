@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://c0edkdf2befgf"]
+
+[ext_resource type="Script" path="res://behaviors/Boid.gd" id="1_cjwso"]
+[ext_resource type="Material" uid="uid://b2raijlysriqd" path="res://behaviors/Tank Material.tres" id="2_cwuij"]
+[ext_resource type="Script" path="res://behaviors/NoiseWander.gd" id="2_ilrxi"]
+[ext_resource type="Script" path="res://behaviors/Harmonic.gd" id="4_iihr6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xykdk"]
+
+[node name="head" type="CharacterBody3D"]
+transform = Transform3D(0.982116, 0.0273472, 0.186268, -0.0114341, 0.996222, -0.0859754, -0.187919, 0.082308, 0.978723, 11.2273, -0.31025, 65.5084)
+velocity = Vector3(1.75334, -0.809283, 9.21268)
+script = ExtResource("1_cjwso")
+force = Vector3(-1.98753, 2.39335, -8.89636)
+acceleration = Vector3(0.283964, 2.78237, 0.83039)
+vel = Vector3(1.75334, -0.809283, 9.21268)
+speed = 9.42861
+max_speed = 5.0
+pause = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+material = ExtResource("2_cwuij")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_xykdk")
+
+[node name="NoiseWander" type="Node" parent="."]
+script = ExtResource("2_ilrxi")
+frequency = 1.0
+radius = 5.0
+theta = 1478.88
+distance = 10
+
+[node name="Harmonic" type="Node" parent="."]
+script = ExtResource("4_iihr6")
+distance = 10
+axis = 1

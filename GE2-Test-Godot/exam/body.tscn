@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dks8tqcapcx3a"]
+
+[ext_resource type="Material" path="res://behaviors/Tank Material.tres" id="1_x4gey"]
+
+[node name="body" type="CSGBox3D"]
+material = ExtResource("1_x4gey")
