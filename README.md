@@ -19,8 +19,9 @@ Click for a video of the octopus creation system you will create today:
 | Description | Marks |
 |-------------|-------|
 | Setting up scene | 20 marks |
-| Gizmo drawing | 30 marks |
-| Instantiating the segments | 30 marks |
+| Gizmo drawing | 20 marks |
+| Instantiating the segments | 20 marks |
+| Animating the segments | 20 marks |
 | Any other cool thing | 20 marks |
 
 You should make a commit with a message every 20 minutes
